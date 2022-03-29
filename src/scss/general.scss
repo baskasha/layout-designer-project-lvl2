@@ -1,0 +1,146 @@
+@font-face {
+    font-weight: 400;
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+body {
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+
+    line-height: 1.5;
+
+    color: #cacaca;
+    background-color: #08020d;
+
+    display: flex;
+    justify-content: center;
+  
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen {
+    h1 {
+        font-size: 60px;
+        line-height: 90px;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 57px;
+    }
+}
+
+
+
+h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-green {    
+    width: 570px;
+    height: 57px;
+
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--green);
+
+    color: white;
+    font-weight: 400;
+    font-size: 13.3px;
+    text-transform: uppercase;
+}
+
+.btn-border {
+    border-radius: 5px;
+    border: 1px solid white;
+
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+
+    &.desktop {
+        width: 318.66px;
+        height: 66px;
+    } 
+
+    &.mobile {
+        width: 326px;
+        height: 66px;
+    }
+}
+
+.btn-small {
+    width: 135px;
+    height: 53px;
+
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+
+    color: var(--grey);
+    font-weight: 400;
+
+    &.desktop {
+        font-size: 12px;
+    }
+
+    &.mobile {
+        font-size: 12.8px;
+    }
+}
+
+.btn-red {
+    width: 131px;
+    height: 53px;
+
+    border-radius: 32px;
+
+    background-color: var(--red);
+
+    color: white;
+    font-size: 12.8px;
+    text-transform: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+  @media (max-width: 441px) {    
+    h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .btn-green {
+        width: 374px;
+        height: 57px;
+    }
+}

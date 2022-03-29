@@ -1,0 +1,74 @@
+.page-description {
+  margin: 200px 0;
+
+  text-align: center;
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 31px;
+
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1240px) {
+    .page-description {
+        width: 1200px;
+    }
+}
+
+
+
+.form-side {
+    width: 265px;
+    height: 50px;
+
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+
+    border: 2px solid var(--grey);
+    border-radius: 3px;
+
+    background: transparent;
+
+    input::placeholder {
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+.form-section {
+  display: flex;
+
+  width: 570px;
+
+  margin: 0 auto;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+@media (max-width: 441px) {
+  .page-description {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .form-side {
+    width: 349px;
+    height: 50px;
+
+    margin-right: 0;
+  }
+
+  .form-section {
+    width: 374px;
+    flex-direction: column;
+  }
+}
